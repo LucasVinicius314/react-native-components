@@ -1,6 +1,6 @@
 {
   "name": "@suresure/react-native-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LucasVinicius314/react-native-components/issues"
   },
-  "homepage": "https://github.com/LucasVinicius314/react-native-components#readme"
+  "homepage": "https://github.com/LucasVinicius314/react-native-components#readme",
+  "dependencies": {
+    "react-native-masked-text": "^1.13.0"
+  }
 }
