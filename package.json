@@ -1,0 +1,19 @@
+{
+  "name": "@suresure/react-native-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasVinicius314/react-native-components.git"
+  },
+  "author": "Lucas Coelho <58010418+LucasVinicius314@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasVinicius314/react-native-components/issues"
+  },
+  "homepage": "https://github.com/LucasVinicius314/react-native-components#readme"
+}
