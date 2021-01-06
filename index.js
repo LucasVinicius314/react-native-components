@@ -1,3 +1,5 @@
 import { Masked, Unmasked } from './src/TextInput'
 
-export { Masked, Unmasked }
+import { StatusBar } from './src/StatusBar'
+
+export { Masked, Unmasked, StatusBar }
