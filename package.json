@@ -1,6 +1,6 @@
 {
   "name": "@suresure/react-native-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LucasVinicius314/react-native-components#readme",
   "dependencies": {
+    "@react-navigation/native": "^5.8.10",
     "react-native-masked-text": "^1.13.0"
   }
 }
