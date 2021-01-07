@@ -12,9 +12,11 @@ function Unmasked({
   keyboardType = 'default',
   style = {},
   onChangeText = () => { },
+  format = text => text,
 }) {
   const [val, setVal] = React.useState(value)
   const update = val => {
+    val = format(val)
     setVal(val)
     onChangeText(val)
   }
@@ -37,10 +39,12 @@ function Masked({
   keyboardType = 'default',
   options = {},
   style = {},
-  onChangeText = () => console.log(123123),
+  onChangeText = () => { },
+  format = text => text,
 }) {
   const [val, setVal] = React.useState(value)
   const update = val => {
+    val = format(val)
     setVal(val)
     onChangeText(val)
   }
