@@ -1,7 +1,7 @@
 {
   "name": "@suresure/react-native-components",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "A package with the purpose of bringing some useful component wrappers, such as a wrapper for masked and unmasked TextInputs, and a wrapper for a focus-based StatusBar.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,14 @@
   "bugs": {
     "url": "https://github.com/LucasVinicius314/react-native-components/issues"
   },
+  "keywords": [
+    "react",
+    "react-native",
+    "components",
+    "expo",
+    "masked text",
+    "text input"
+  ],
   "homepage": "https://github.com/LucasVinicius314/react-native-components#readme",
   "dependencies": {
     "@react-navigation/native": "^5.8.10",
