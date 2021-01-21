@@ -4,6 +4,7 @@
   "description": "A package with the purpose of bringing some useful component wrappers, such as a wrapper for masked and unmasked TextInputs, and a wrapper for a focus-based StatusBar.",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,5 +28,9 @@
   "dependencies": {
     "@react-navigation/native": "^5.8.10",
     "react-native-masked-text": "^1.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-native": "^0.63.46"
   }
 }
