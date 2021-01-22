@@ -10,14 +10,15 @@ import {
 import { TextInputMaskOptionProp } from 'react-native-masked-text/index'
 
 interface UnmaskedTextInputProps extends RN.TextInputProps {
-  format: Function
+  format?: (text: string) => string
   onChangeText: (text: string) => void
 }
 
 const Unmasked: React.FunctionComponent<UnmaskedTextInputProps> = (props: UnmaskedTextInputProps) => {
+  const format: MaskedTextInputProps['format'] = (text: string) => text
   const [, setVal] = React.useState(props.value)
   const update: (text: string) => void = (text: string) => {
-    text = props.format(text)
+    text = (props.format ?? format)(text)
     setVal(text)
     props.onChangeText(text)
   }
@@ -35,16 +36,17 @@ const Unmasked: React.FunctionComponent<UnmaskedTextInputProps> = (props: Unmask
 }
 
 interface MaskedTextInputProps extends RN.TextInputProps {
-  format: Function
+  format?: (text: string) => string
   onChangeText: (text: string) => void
   type: 'cel-phone' | 'cnpj' | 'cpf' | 'credit-card' | 'custom' | 'datetime' | 'money' | 'only-numbers' | 'zip-code'
   options: TextInputMaskOptionProp
 }
 
 const Masked: React.FunctionComponent<MaskedTextInputProps> = (props: MaskedTextInputProps) => {
+  const format: MaskedTextInputProps['format'] = (text: string) => text
   const [, setVal] = React.useState(props.value)
   const update: (text: string) => void = (text: string) => {
-    text = props.format(text)
+    text = (props.format ?? format)(text)
     setVal(text)
     props.onChangeText(text)
   }

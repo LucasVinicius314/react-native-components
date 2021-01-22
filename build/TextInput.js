@@ -5,9 +5,11 @@ const MaskedText = require("react-native-masked-text");
 const React = require("react");
 const react_native_1 = require("react-native");
 const Unmasked = (props) => {
+    const format = (text) => text;
     const [, setVal] = React.useState(props.value);
     const update = (text) => {
-        text = props.format(text);
+        var _a;
+        text = ((_a = props.format) !== null && _a !== void 0 ? _a : format)(text);
         setVal(text);
         props.onChangeText(text);
     };
@@ -17,9 +19,11 @@ const Unmasked = (props) => {
 };
 exports.Unmasked = Unmasked;
 const Masked = (props) => {
+    const format = (text) => text;
     const [, setVal] = React.useState(props.value);
     const update = (text) => {
-        text = props.format(text);
+        var _a;
+        text = ((_a = props.format) !== null && _a !== void 0 ? _a : format)(text);
         setVal(text);
         props.onChangeText(text);
     };
