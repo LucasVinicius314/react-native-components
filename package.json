@@ -1,6 +1,6 @@
 {
   "name": "@suresure/react-native-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A package with the purpose of bringing some useful component wrappers, such as a wrapper for masked and unmasked TextInputs, and a wrapper for a focus-based StatusBar.",
   "main": "build/index.js",
   "scripts": {
@@ -27,7 +27,8 @@
   "homepage": "https://github.com/LucasVinicius314/react-native-components#readme",
   "dependencies": {
     "@react-navigation/native": "^5.9.1",
-    "react-native-masked-text": "^1.13.0"
+    "react-native-masked-text": "^1.13.0",
+    "react-native-paper": "^4.7.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
